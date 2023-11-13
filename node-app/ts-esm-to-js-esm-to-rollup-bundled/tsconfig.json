@@ -1,0 +1,15 @@
+{
+  "include": ["./src"],
+  "compilerOptions": {
+    "module": "esnext",
+    // "./hello" に対して拡張子自動補完する CJSで "./hello"を解決してくれという設定。
+    // ポイントは【TSコンパイル時】に "./hello"が拡張子なくてもOK とするということ。
+    // ....
+    // 実行環境が NodeJS ✕ ESM(package.json type=module)だったら、拡張子必要なんだけど
+    // webpack/rollup でバンドルする場合は、バンドルツールが自動で拡張子付与してくれるから
+    // 定義不要ってわけ！ ... これに対して "bundler"というオプションもある。
+    "moduleResolution": "node",
+    "target": "es6",
+    "outDir": "./build"
+  }
+}

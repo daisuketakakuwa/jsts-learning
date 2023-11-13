@@ -1,0 +1,11 @@
+{
+  "name": "ts-esm-to-js-cjs",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./build/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}

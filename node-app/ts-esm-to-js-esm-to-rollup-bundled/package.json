@@ -1,0 +1,12 @@
+{
+  "name": "ts-esm-to-js-esm",
+  "scripts": {
+    "build": "tsc",
+    "bundle": "rollup ./build/index.js -f esm -o ./build/bundle.js",
+    "start": "node ./build/bundle.js"
+  },
+  "devDependencies": {
+    "rollup": "^4.4.0",
+    "typescript": "5.1"
+  }
+}
